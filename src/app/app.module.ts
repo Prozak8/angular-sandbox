@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { SuccessMessageComponent } from './success-message/success-message.component';
+import { FailureMessageComponent } from './failure-message/failure-message.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SuccessMessageComponent,
+    FailureMessageComponent
   ],
   imports: [
     BrowserModule,
