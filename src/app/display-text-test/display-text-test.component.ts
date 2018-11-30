@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./display-text-test.component.css']
 })
 export class DisplayTextTestComponent implements OnInit {
+  showSecretPassword = false;
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  onShowSecretPassword() {
+    this.showSecretPassword = true;
+  }
 }
