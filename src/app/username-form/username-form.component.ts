@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./username-form.component.css']
 })
 export class UsernameFormComponent implements OnInit {
+  userName = '';
+  resetUserNameToBlank = false;
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit() {
   }
-
+  onResetUserNameToBlank() {
+    this.userName = '';
+  }
 }

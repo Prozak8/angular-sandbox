@@ -2,7 +2,7 @@
   <p>{{ userName }}</p>
 <button 
   class="btn btn-primary"
-  [disabled]="!resetUserNameToBlank"
+  [disabled]="userName.length === 0"
   (click)="onResetUserNameToBlank()">
   Reset
 </button>
