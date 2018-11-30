@@ -9,7 +9,9 @@ export class DisplayTextTestComponent implements OnInit {
   showSecretPassword = false;
   clickCount = 0;
 
-  constructor() { }
+  constructor() {  
+
+  }
 
   ngOnInit() {
   }
@@ -18,6 +20,10 @@ export class DisplayTextTestComponent implements OnInit {
   }
 
   updateClickCount() {
-    this.clickCount += 1
+    this.clickCount++
+  }
+
+  userIsSpamming() {
+    this.clickCount > 5 ? 'blue' : 'red'
   }
 }

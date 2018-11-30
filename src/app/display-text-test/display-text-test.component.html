@@ -11,4 +11,7 @@
   </p>
 </div>
 
-<p>{{ clickCount }}</p>
+<p
+  [ngClass]="{spamming: clickCount > 5}">
+  {{ clickCount }}
+</p>
