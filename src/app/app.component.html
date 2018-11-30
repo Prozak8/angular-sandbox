@@ -6,10 +6,12 @@
         <li>Upon clicking the button, the username should be reset to an empty string</li>
     </ol>
     <hr>
-    <input type="text" [(ngModel)]="name">
-    <p>{{ name }}</p>
+    <input type="text" [(ngModel)]="userName">
+    <p>{{ userName }}</p>
     <button 
-    class="btn btn-primary">
+    class="btn btn-primary"
+    [disabled]="!resetUserNameToBlank"
+    (click)="onResetUserNameToBlank()">
         Reset
     </button>
 </div>
