@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayTextTestComponent implements OnInit {
   showSecretPassword = false;
+  clickCount = 0;
 
   constructor() { }
 
@@ -14,5 +15,9 @@ export class DisplayTextTestComponent implements OnInit {
   }
   onShowSecretPassword() {
     this.showSecretPassword = true;
+  }
+
+  updateClickCount() {
+    this.clickCount += 1
   }
 }

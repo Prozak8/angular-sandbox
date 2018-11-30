@@ -1,6 +1,7 @@
 <button 
   class="btn btn-primary"
-  (click)="onShowSecretPassword()">
+  (click)="onShowSecretPassword();
+           updateClickCount()">
   Display Password
 </button>
 
@@ -9,3 +10,5 @@
     Your secret password is AbraKadabra
   </p>
 </div>
+
+<p>{{ clickCount }}</p>
