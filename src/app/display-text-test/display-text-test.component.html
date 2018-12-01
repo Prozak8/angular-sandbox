@@ -10,8 +10,9 @@
   </p>
 </div>
 
-<p
-  [ngStyle]="{backgroundColor: userIsSpamming()}"
-  [ngClass]="{spamming: clickCount > 5}">
-  {{ clickCount }}
-</p>
+<div
+  *ngFor="let clickLogItem of clickLog"
+  [ngStyle]="{backgroundColor: clickLogItem >= 5 ? 'blue' : 'none'}"
+  [ngClass]="{'white-text': clickLogItem >= 5}">
+  {{ clickLogItem }}
+</div>
