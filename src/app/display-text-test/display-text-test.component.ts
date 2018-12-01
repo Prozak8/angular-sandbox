@@ -24,6 +24,6 @@ export class DisplayTextTestComponent implements OnInit {
   }
 
   userIsSpamming() {
-    this.clickCount > 5 ? 'blue' : 'red'
+    return this.clickCount > 5 ? 'blue' : 'none'
   }
 }

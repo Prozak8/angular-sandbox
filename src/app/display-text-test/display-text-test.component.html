@@ -12,6 +12,7 @@
 </div>
 
 <p
+  [ngStyle]="{backgroundColor: userIsSpamming()}"
   [ngClass]="{spamming: clickCount > 5}">
   {{ clickCount }}
 </p>
