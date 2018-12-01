@@ -17,9 +17,6 @@ export class DisplayTextTestComponent implements OnInit {
   }
   onShowSecretPassword() {
     this.showSecretPassword = true;
-  }
-
-  updateClickCount() {
     this.clickCount++
   }
 
