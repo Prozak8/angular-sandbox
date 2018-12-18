@@ -1,8 +1,13 @@
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <div app-instructions></div>
-            <hr>
-        </div>
+<app-game 
+    (gameStarted)="onGameStarted($event)"
+    (gameStop)="onGameStop()"></app-game>
+  <div class="row">
+    <div class="col-xs-6">
+      <label>Even Numbers:</label>
+      <app-even *ngFor="let number of numbers" [number]="number % 2 == 0 ? number : null"></app-even>
     </div>
-</div>
+    <div class="col-xs-6">
+        <label>Odd Numbers:</label>
+        <app-odd *ngFor="let number of numbers" [number]="number % 2 == 1 ? number : null"></app-odd>
+    </div>
+  </div>
