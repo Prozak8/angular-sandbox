@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { InstructionsComponent } from './instructions/instructions.component';
+import { DirectiveTrainingDirective } from './directive-training.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InstructionsComponent
+    InstructionsComponent,
+    DirectiveTrainingDirective
   ],
   imports: [
     BrowserModule,
