@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { InstructionsComponent } from './instructions/instructions.component';
 import { DirectiveTrainingDirective } from './directive-training.directive';
+import { UnlessDirective } from './unless.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     InstructionsComponent,
-    DirectiveTrainingDirective
+    DirectiveTrainingDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
